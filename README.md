@@ -215,69 +215,17 @@ docker run -d --name otakuflix-bot --env-file .env otakuflix-bot
 
 ### ☁️ Choose Your Deployment Platform
 
-<div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 16px; margin: 2rem 0;">
+<div align="center" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin: 1.5rem 0;">
 
-<!-- Render Button -->
-<a href="https://render.com/deploy?repo=https://github.com/Otakuflix/TG-Zipper&env=API_ID=YOUR_API_ID,API_HASH=YOUR_API_HASH,BOT_TOKEN=YOUR_BOT_TOKEN,CLIENT_ID=YOUR_GOOGLE_CLIENT_ID,CLIENT_SECRET=YOUR_GOOGLE_CLIENT_SECRET" style="text-decoration: none; transition: all 0.3s ease;" onmouseover="this.style.transform='translateY(-3px)'" onmouseout="this.style.transform='translateY(0)'">
-  <div style="background: linear-gradient(135deg, #46E3B7 0%, #2BC0A4 100%); border-radius: 12px; padding: 16px; color: white; display: flex; align-items: center; gap: 12px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); border: 2px solid #46E3B7; height: 100%;">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/render/render-original.svg" width="32" height="32" alt="Render" style="filter: brightness(0) invert(1);"/>
-    <div>
-      <div style="font-size: 14px; opacity: 0.9;">Deploy to</div>
-      <div style="font-weight: 600; font-size: 16px;">Render</div>
-    </div>
-  </div>
-</a>
+[![Deploy to Render](https://img.shields.io/badge/Render-46E3B7?style=for-the-badge&logo=render&logoColor=white&label=Deploy+to&labelColor=121212&color=46E3B7)](https://render.com/deploy?repo=https://github.com/Otakuflix/TG-Zipper&env=API_ID=YOUR_API_ID,API_HASH=YOUR_API_HASH,BOT_TOKEN=YOUR_BOT_TOKEN,CLIENT_ID=YOUR_GOOGLE_CLIENT_ID,CLIENT_SECRET=YOUR_GOOGLE_CLIENT_SECRET)
 
-<!-- Railway Button -->
-<a href="https://railway.app/template/8tQ2kO?referralCode=OtakuFlix" style="text-decoration: none; transition: all 0.3s ease;" onmouseover="this.style.transform='translateY(-3px)'" onmouseout="this.style.transform='translateY(0)'">
-  <div style="position: relative; border-radius: 12px; padding: 16px; color: white; display: flex; align-items: center; gap: 12px; border: 2px solid #6E3BF5; height: 100%; overflow: hidden;">
-    <!-- Radial Gradient Background -->
-    <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: radial-gradient(134.26% 244.64% at 42.92% -80.36%, #6E3BF5 0%, rgba(110, 59, 245, 0.2) 70%, rgba(110, 59, 245, 0.1) 100%); opacity: 0.6; z-index: 1;"></div>
-    <!-- Content -->
-    <div style="position: relative; z-index: 2; display: flex; align-items: center; gap: 12px; width: 100%;">
-      <img src="https://railway.app/brand/logo-dark.svg" width="32" height="32" alt="Railway" style="filter: brightness(0) invert(1);"/>
-      <div>
-        <div style="font-size: 14px; opacity: 0.9;">Deploy to</div>
-        <div style="font-weight: 600; font-size: 16px; color: #6E3BF5; text-shadow: 0 0 8px rgba(110, 59, 245, 0.3);">Railway</div>
-      </div>
-    </div>
-  </div>
-</a>
+[![Deploy on Railway](https://img.shields.io/badge/Railway-6E3BF5?style=for-the-badge&logo=railway&logoColor=white&label=Deploy+on&labelColor=0B0D0E&color=6E3BF5)](https://railway.app/template/8tQ2kO?referralCode=OtakuFlix)
 
-<!-- Koyeb Button -->
-<a href="https://app.koyeb.com/deploy?type=git&repository=github.com/Otakuflix/TG-Zipper&branch=main&name=otakuflix-bot&ports=8080;http;/&env[API_ID]=YOUR_API_ID&env[API_HASH]=YOUR_API_HASH&env[BOT_TOKEN]=YOUR_BOT_TOKEN&env[CLIENT_ID]=YOUR_GOOGLE_CLIENT_ID&env[CLIENT_SECRET]=YOUR_GOOGLE_CLIENT_SECRET" style="text-decoration: none; transition: all 0.3s ease;" onmouseover="this.style.transform='translateY(-3px)'" onmouseout="this.style.transform='translateY(0)'">
-  <div style="background: linear-gradient(135deg,rgb(245, 245, 245) 0%,rgb(0, 0, 0) 100%);border-radius: 12px; padding: 16px; color: white; display: flex; align-items: center; gap: 12px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); border: 2px solid #00E676; height: 100%;">
-    <img src="https://images.icon-icons.com/3912/PNG/512/koyeb_logo_icon_247887.png" width="32" height="32" alt="Koyeb"/>
-    <div>
-      <div style="font-size: 14px; opacity: 0.9; color: #00E676;">Deploy to</div>
-      <div style="font-weight: 600; font-size: 16px; color: #00E676;">Koyeb</div>
-    </div>
-  </div>
-</a>
+[![Deploy on Koyeb](https://img.shields.io/badge/Koyeb-00E676?style=for-the-badge&logo=koyeb&logoColor=white&label=Deploy+on&labelColor=121212&color=00E676)](https://app.koyeb.com/deploy?type=git&repository=github.com/Otakuflix/TG-Zipper&branch=main&name=otakuflix-bot&ports=8080;http;/&env[API_ID]=YOUR_API_ID&env[API_HASH]=YOUR_API_HASH&env[BOT_TOKEN]=YOUR_BOT_TOKEN&env[CLIENT_ID]=YOUR_GOOGLE_CLIENT_ID&env[CLIENT_SECRET]=YOUR_GOOGLE_CLIENT_SECRET)
 
-<!-- Heroku Button -->
-<a href="https://heroku.com/deploy?template=https://github.com/Otakuflix/TG-Zipper" style="text-decoration: none; transition: all 0.3s ease;" onmouseover="this.style.transform='translateY(-3px)'" onmouseout="this.style.transform='translateY(0)'">
-  <div style="background: linear-gradient(135deg, #430098 0%, #5C1A9C 100%); border-radius: 12px; padding: 16px; color: white; display: flex; align-items: center; gap: 12px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); border: 2px solid #9D7AFF; height: 100%;">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/heroku/heroku-original.svg" width="32" height="32" alt="Heroku" style="filter: brightness(0) invert(1);"/>
-    <div>
-      <div style="font-size: 14px; opacity: 0.9;">Deploy to</div>
-      <div style="font-weight: 600; font-size: 16px;">Heroku</div>
-    </div>
-  </div>
-</a>
+[![Deploy to Heroku](https://img.shields.io/badge/Heroku-430098?style=for-the-badge&logo=heroku&logoColor=white&label=Deploy+to&labelColor=430098&color=white)](https://heroku.com/deploy?template=https://github.com/Otakuflix/TG-Zipper)
 
-<!-- Cloudflare Button -->
-<a href="https://deploy.workers.cloudflare.com/?url=https://github.com/Otakuflix/TG-Zipper" style="text-decoration: none; transition: all 0.3s ease;" onmouseover="this.style.transform='translateY(-3px)'" onmouseout="this.style.transform='translateY(0)'">
-  <div style="background: linear-gradient(135deg, #F38020 0%, #F36F20 100%); border-radius: 12px; padding: 16px; color: white; display: flex; align-items: center; gap: 12px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); border: 2px solid #FFB74D; height: 100%;">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cloudflare/cloudflare-original.svg" width="32" height="32" alt="Cloudflare" style="filter: brightness(0) invert(1);"/>
-    <div>
-      <div style="font-size: 14px; opacity: 0.9;">Deploy to</div>
-      <div style="font-weight: 600; font-size: 16px;">Cloudflare Workers</div>
-    </div>
-  </div>
-</a>
-
-</div>
+[![Deploy on Cloudflare](https://img.shields.io/badge/Cloudflare_Workers-F38020?style=for-the-badge&logo=cloudflare&logoColor=white&label=Deploy+on&labelColor=F38020&color=white)](https://deploy.workers.cloudflare.com/?url=https://github.com/Otakuflix/TG-Zipper)
 
 </div>
 
