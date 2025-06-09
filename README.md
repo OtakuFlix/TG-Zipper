@@ -38,17 +38,21 @@ A sleek & powerful **Telegram bot** by **@Otakuflix**, created for the ultimate 
 
 ### 3. 🧪 Setup Your Project
 ```bash
-git clone https://github.com/yourusername/tele_extract_bot.git
-cd tele_extract_bot
+git clone https://github.com/Otakuflix/TG-Zipper.git
+cd TG-Zipper
 pip install -r requirements.txt
-````
+```
 
 * Create your `.env` file:
 
 ```env
+API_ID=your_telegram_api_id
+API_HASH=your_telegram_api_hash
 BOT_TOKEN=your_telegram_bot_token
 CLIENT_ID=your_google_client_id
 CLIENT_SECRET=your_google_client_secret
+PORT=10000
+PYTHONUNBUFFERED=1
 ```
 
 ### 4. 🎮 Run It Like a Pro
@@ -207,19 +211,47 @@ docker run -d --name otakuflix-bot --env-file .env otakuflix-bot
 
 ## 🚀 One-Click Deployment
 
-<div align="center" style="margin: 2rem 0;">
+<div align="center" style="margin: 1rem 0 2rem 0;">
 
-### Deploy with your preferred platform:
+### ☁️ Choose Your Deployment Platform
 
-[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/Otakuflix/TG-Zipper&env=API_ID=YOUR_API_ID,API_HASH=YOUR_API_HASH,BOT_TOKEN=YOUR_BOT_TOKEN,CLIENT_ID=YOUR_GOOGLE_CLIENT_ID,CLIENT_SECRET=YOUR_GOOGLE_CLIENT_SECRET)
+<div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; margin: 1.5rem 0;">
 
-[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/template/8tQ2kO?referralCode=OtakuFlix)
+<a href="https://render.com/deploy?repo=https://github.com/Otakuflix/TG-Zipper&env=API_ID=YOUR_API_ID,API_HASH=YOUR_API_HASH,BOT_TOKEN=YOUR_BOT_TOKEN,CLIENT_ID=YOUR_GOOGLE_CLIENT_ID,CLIENT_SECRET=YOUR_GOOGLE_CLIENT_SECRET">
+  <img src="https://img.shields.io/badge/🚀_Deploy_to_Render-46E3B7?style=for-the-badge&logo=render&logoColor=white&labelColor=121212&color=46E3B7&borderColor=46E3B7&borderWidth=2px&borderRadius=12px&padding=8px" alt="Deploy to Render" style="border-radius: 12px;">
+</a>
 
-[![Deploy on Koyeb](https://www.koyeb.com/static/images/deploy/button.svg)](https://app.koyeb.com/deploy?type=git&repository=github.com/Otakuflix/TG-Zipper&branch=main&name=otakuflix-bot&ports=8080;http;/&env[API_ID]=YOUR_API_ID&env[API_HASH]=YOUR_API_HASH&env[BOT_TOKEN]=YOUR_BOT_TOKEN&env[CLIENT_ID]=YOUR_GOOGLE_CLIENT_ID&env[CLIENT_SECRET]=YOUR_GOOGLE_CLIENT_SECRET)
+<a href="https://railway.app/template/8tQ2kO?referralCode=OtakuFlix">
+  <img src="https://img.shields.io/badge/🚂_Deploy_on_Railway-0B0D0E?style=for-the-badge&logo=railway&logoColor=white&labelColor=0B0D0E&color=white&borderColor=0B0D0E&borderWidth=2px&borderRadius=12px&padding=8px" alt="Deploy on Railway" style="border-radius: 12px;">
+</a>
 
-[![Deploy to Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Otakuflix/TG-Zipper)
+<a href="https://app.koyeb.com/deploy?type=git&repository=github.com/Otakuflix/TG-Zipper&branch=main&name=otakuflix-bot&ports=8080;http;/&env[API_ID]=YOUR_API_ID&env[API_HASH]=YOUR_API_HASH&env[BOT_TOKEN]=YOUR_BOT_TOKEN&env[CLIENT_ID]=YOUR_GOOGLE_CLIENT_ID&env[CLIENT_SECRET]=YOUR_GOOGLE_CLIENT_SECRET">
+  <img src="https://img.shields.io/badge/☁️_Deploy_on_Koyeb-121212?style=for-the-badge&logo=koyeb&logoColor=white&labelColor=121212&color=white&borderColor=121212&borderWidth=2px&borderRadius=12px&padding=8px" alt="Deploy on Koyeb" style="border-radius: 12px;">
+</a>
+
+<a href="https://heroku.com/deploy?template=https://github.com/Otakuflix/TG-Zipper">
+  <img src="https://img.shields.io/badge/🦸_Deploy_to_Heroku-430098?style=for-the-badge&logo=heroku&logoColor=white&labelColor=430098&color=white&borderColor=430098&borderWidth=2px&borderRadius=12px&padding=8px" alt="Deploy to Heroku" style="border-radius: 12px;">
+</a>
+
+<a href="https://dash.cloudflare.com/?to=/:account/workers/overview">
+  <img src="https://img.shields.io/badge/🌩️_Deploy_on_Cloudflare-F38020?style=for-the-badge&logo=cloudflare&logoColor=white&labelColor=F38020&color=white&borderColor=F38020&borderWidth=2px&borderRadius=12px&padding=8px" alt="Deploy on Cloudflare" style="border-radius: 12px;">
+</a>
 
 </div>
+
+</div>
+
+### ⚙️ Required Environment Variables
+
+```env
+API_ID=your_telegram_api_id
+API_HASH=your_telegram_api_hash
+BOT_TOKEN=your_telegram_bot_token
+CLIENT_ID=your_google_client_id
+CLIENT_SECRET=your_google_client_secret
+PORT=10000  # Required for Render
+PYTHONUNBUFFERED=1
+```
 
 ### Required Environment Variables:
 
