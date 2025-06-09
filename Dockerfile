@@ -7,7 +7,7 @@ ENV DEBIAN_FRONTEND=noninteractive
 RUN apt-get update -qq && \
     apt-get install -y --no-install-recommends \
     wget \
-    unrar \
+    unrar-free \
     p7zip-full \
     curl \
     && apt-get clean \
