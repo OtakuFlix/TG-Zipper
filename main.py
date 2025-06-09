@@ -11,9 +11,13 @@ bot = None
 @app.on_event("startup")
 async def startup_event():
     global bot
-    bot = ModernFileDownloaderBot()
-    asyncio.create_task(bot.start())
-
+    try:
+        print("[Startup] Initializing bot...")
+        bot = ModernFileDownloaderBot()
+        asyncio.create_task(bot.start())
+        print("[Startup] Bot started.")
+    except Exception as e:
+        print(f"[Startup Error] Failed to start bot: {e}")
 @app.get("/")
 async def root():
     return {"status": "OtakuFlix Bot is running!"}
