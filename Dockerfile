@@ -1,10 +1,16 @@
-FROM python:3.11-slim
+FROM python:3.11-bullseye
 
-# Install system dependencies with retry logic
-RUN apt-get update && apt-get install -y --no-install-recommends \
+# Set non-interactive frontend for apt
+ENV DEBIAN_FRONTEND=noninteractive
+
+# Update and install system dependencies
+RUN apt-get update -qq && \
+    apt-get install -y --no-install-recommends \
     wget \
     unrar \
     p7zip-full \
+    curl \
+    && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 
 # Set working directory
@@ -25,6 +31,11 @@ RUN mkdir -p downloads extracted
 # Set environment variables
 ENV PYTHONUNBUFFERED=1
 ENV PYTHONPATH=/app
+ENV PORT=8080
+
+# Health check
+HEALTHCHECK --interval=30s --timeout=30s --start-period=5s --retries=3 \
+    CMD curl -f http://localhost:${PORT}/health || exit 1
 
 # Run the application using the FastAPI app
-CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8080"]
+CMD ["sh", "-c", "uvicorn main:app --host 0.0.0.0 --port ${PORT}"]
