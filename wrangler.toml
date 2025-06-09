@@ -1,0 +1,20 @@
+name = "otakuflix-bot"
+main = "worker.js"
+compatibility_date = "2023-05-18"
+
+[build]
+  command = "npm install && npm run build"
+
+[build.upload]
+  format = "service-worker"
+
+[vars]
+# These will be set in Cloudflare Dashboard
+API_ID = ""
+API_HASH = ""
+BOT_TOKEN = ""
+CLIENT_ID = ""
+CLIENT_SECRET = ""
+
+[triggers]
+crons = ["*/10 * * * *"]  # Run every 10 minutes

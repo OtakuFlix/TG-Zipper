@@ -1,0 +1,30 @@
+services:
+  - type: web
+    name: otakuflix-bot
+    env: python
+    region: singapore
+    buildCommand: pip install -r requirements.txt
+    startCommand: python bot.py
+    envVars:
+      - key: PORT
+        value: 10000
+      - key: PYTHONUNBUFFERED
+        value: 1
+      - key: API_ID
+        sync: false
+      - key: API_HASH
+        sync: false
+      - key: BOT_TOKEN
+        sync: false
+      - key: CLIENT_ID
+        sync: false
+      - key: CLIENT_SECRET
+        sync: false
+    plan: free
+    healthCheckPath: /health
+    autoDeploy: true
+    numInstances: 1
+    disk:
+      name: data
+      mountPath: /data
+      sizeGB: 1

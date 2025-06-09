@@ -1,0 +1,16 @@
+pyrogram==2.0.106
+tgcrypto==1.2.5
+requests==2.31.0
+google-api-python-client==2.108.0
+google-auth==2.23.4
+google-auth-oauthlib==1.1.0
+google-auth-httplib2==0.1.1
+rarfile==4.1
+py7zr==0.20.6
+pathlib==1.0.1
+aiohttp==3.8.5
+python-dotenv==1.0.0
+uvicorn==0.22.0
+fastapi==0.95.2
+python-multipart==0.0.6
+httpx==0.24.1

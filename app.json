@@ -1,0 +1,49 @@
+{
+  "name": "OtakuFlix Bot",
+  "description": "Telegram bot for downloading and managing files with Google Drive integration",
+  "repository": "https://github.com/Otakuflix/TG-Zipper",
+  "logo": "https://iili.io/F3pawHx.jpg",
+  "keywords": ["telegram", "bot", "python", "google-drive", "file-manager"],
+  "env": {
+    "API_ID": {
+      "description": "Your Telegram API ID from https://my.telegram.org/auth",
+      "required": true
+    },
+    "API_HASH": {
+      "description": "Your Telegram API Hash from https://my.telegram.org/auth",
+      "required": true
+    },
+    "BOT_TOKEN": {
+      "description": "Your Telegram Bot Token from @BotFather",
+      "required": true
+    },
+    "CLIENT_ID": {
+      "description": "Your Google OAuth Client ID from Google Cloud Console",
+      "required": true
+    },
+    "CLIENT_SECRET": {
+      "description": "Your Google OAuth Client Secret from Google Cloud Console",
+      "required": true
+    },
+    "PORT": {
+      "description": "Port to run the bot on",
+      "value": "10000"
+    },
+    "PYTHONUNBUFFERED": {
+      "description": "Enable Python's unbuffered output",
+      "value": "1"
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "heroku/python"
+    }
+  ],
+  "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "free"
+    }
+  },
+  "stack": "container"
+}
