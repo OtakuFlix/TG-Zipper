@@ -49,6 +49,11 @@ class ModernFileDownloaderBot:
         # Register handlers
         self.setup_handlers()
     
+    async def start(self):
+        """Start the bot client."""
+        await self.app.start()
+        await self.app.run_until_disconnected()
+    
     def get_progress_bar(self, percentage, length=20):
         """Create an animated progress bar with modern styling"""
         filled = int(length * percentage / 100)
